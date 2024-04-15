@@ -1,0 +1,335 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{13F02BB0-236E-4DDD-BFD6-7FB573505AD3}|Hacker.Tests\\Hacker.Tests.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.tests\\testdataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13F02BB0-236E-4DDD-BFD6-7FB573505AD3}|Hacker.Tests\\Hacker.Tests.csproj|solutionrelative:hacker.tests\\testdataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13F02BB0-236E-4DDD-BFD6-7FB573505AD3}|Hacker.Tests\\Hacker.Tests.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.tests\\storiesservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13F02BB0-236E-4DDD-BFD6-7FB573505AD3}|Hacker.Tests\\Hacker.Tests.csproj|solutionrelative:hacker.tests\\storiesservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F535279B-E3AD-45E5-8481-1E21FD3C6E7B}|Hacker.Services\\Hacker.Services.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.services\\storiesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F535279B-E3AD-45E5-8481-1E21FD3C6E7B}|Hacker.Services\\Hacker.Services.csproj|solutionrelative:hacker.services\\storiesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F535279B-E3AD-45E5-8481-1E21FD3C6E7B}|Hacker.Services\\Hacker.Services.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.services\\istoriesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F535279B-E3AD-45E5-8481-1E21FD3C6E7B}|Hacker.Services\\Hacker.Services.csproj|solutionrelative:hacker.services\\istoriesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F535279B-E3AD-45E5-8481-1E21FD3C6E7B}|Hacker.Services\\Hacker.Services.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.services\\icacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F535279B-E3AD-45E5-8481-1E21FD3C6E7B}|Hacker.Services\\Hacker.Services.csproj|solutionrelative:hacker.services\\icacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F535279B-E3AD-45E5-8481-1E21FD3C6E7B}|Hacker.Services\\Hacker.Services.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.services\\cacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F535279B-E3AD-45E5-8481-1E21FD3C6E7B}|Hacker.Services\\Hacker.Services.csproj|solutionrelative:hacker.services\\cacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08AD44-B9AA-4D5C-998C-80AEBC631CD7}|Hacker.API\\Hacker.API.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C08AD44-B9AA-4D5C-998C-80AEBC631CD7}|Hacker.API\\Hacker.API.csproj|solutionrelative:hacker.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08AD44-B9AA-4D5C-998C-80AEBC631CD7}|Hacker.API\\Hacker.API.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.api\\controllers\\hackernewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C08AD44-B9AA-4D5C-998C-80AEBC631CD7}|Hacker.API\\Hacker.API.csproj|solutionrelative:hacker.api\\controllers\\hackernewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C953824-2652-44CB-A716-EA1D81C14FE8}|Hacker.Models\\Hacker.Models.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.models\\story.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C953824-2652-44CB-A716-EA1D81C14FE8}|Hacker.Models\\Hacker.Models.csproj|solutionrelative:hacker.models\\story.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C953824-2652-44CB-A716-EA1D81C14FE8}|Hacker.Models\\Hacker.Models.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.models\\common\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C953824-2652-44CB-A716-EA1D81C14FE8}|Hacker.Models\\Hacker.Models.csproj|solutionrelative:hacker.models\\common\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F535279B-E3AD-45E5-8481-1E21FD3C6E7B}|Hacker.Services\\Hacker.Services.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.services\\hacker.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F535279B-E3AD-45E5-8481-1E21FD3C6E7B}|Hacker.Services\\Hacker.Services.csproj|solutionrelative:hacker.services\\hacker.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C953824-2652-44CB-A716-EA1D81C14FE8}|Hacker.Models\\Hacker.Models.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.models\\hacker.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4C953824-2652-44CB-A716-EA1D81C14FE8}|Hacker.Models\\Hacker.Models.csproj|solutionrelative:hacker.models\\hacker.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08AD44-B9AA-4D5C-998C-80AEBC631CD7}|Hacker.API\\Hacker.API.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.api\\hacker.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2C08AD44-B9AA-4D5C-998C-80AEBC631CD7}|Hacker.API\\Hacker.API.csproj|solutionrelative:hacker.api\\hacker.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08AD44-B9AA-4D5C-998C-80AEBC631CD7}|Hacker.API\\Hacker.API.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.api\\hacker.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{2C08AD44-B9AA-4D5C-998C-80AEBC631CD7}|Hacker.API\\Hacker.API.csproj|solutionrelative:hacker.api\\hacker.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08AD44-B9AA-4D5C-998C-80AEBC631CD7}|Hacker.API\\Hacker.API.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2C08AD44-B9AA-4D5C-998C-80AEBC631CD7}|Hacker.API\\Hacker.API.csproj|solutionrelative:hacker.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C08AD44-B9AA-4D5C-998C-80AEBC631CD7}|Hacker.API\\Hacker.API.csproj|c:\\users\\bzfs\\source\\repos\\hacker.api\\hacker.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2C08AD44-B9AA-4D5C-998C-80AEBC631CD7}|Hacker.API\\Hacker.API.csproj|solutionrelative:hacker.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICacheService.cs",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Services\\ICacheService.cs",
+              "RelativeDocumentMoniker": "Hacker.Services\\ICacheService.cs",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Services\\ICacheService.cs",
+              "RelativeToolTip": "Hacker.Services\\ICacheService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T12:09:29.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CacheService.cs",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Services\\CacheService.cs",
+              "RelativeDocumentMoniker": "Hacker.Services\\CacheService.cs",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Services\\CacheService.cs",
+              "RelativeToolTip": "Hacker.Services\\CacheService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBwAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T11:43:49.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestDataProvider.cs",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Tests\\TestDataProvider.cs",
+              "RelativeDocumentMoniker": "Hacker.Tests\\TestDataProvider.cs",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Tests\\TestDataProvider.cs",
+              "RelativeToolTip": "Hacker.Tests\\TestDataProvider.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwB0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:17:38.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Models\\Common\\Constants.cs",
+              "RelativeDocumentMoniker": "Hacker.Models\\Common\\Constants.cs",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Models\\Common\\Constants.cs",
+              "RelativeToolTip": "Hacker.Models\\Common\\Constants.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:11:39.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Hacker.Models",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Models\\Hacker.Models.csproj",
+              "RelativeDocumentMoniker": "Hacker.Models\\Hacker.Models.csproj",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Models\\Hacker.Models.csproj",
+              "RelativeToolTip": "Hacker.Models\\Hacker.Models.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-15T09:11:17.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StoriesServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Tests\\StoriesServiceTests.cs",
+              "RelativeDocumentMoniker": "Hacker.Tests\\StoriesServiceTests.cs",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Tests\\StoriesServiceTests.cs",
+              "RelativeToolTip": "Hacker.Tests\\StoriesServiceTests.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAowD4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T08:16:29.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Hacker.Services.csproj",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Services\\Hacker.Services.csproj",
+              "RelativeDocumentMoniker": "Hacker.Services\\Hacker.Services.csproj",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Services\\Hacker.Services.csproj",
+              "RelativeToolTip": "Hacker.Services\\Hacker.Services.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-12T13:06:29.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IStoriesService.cs",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Services\\IStoriesService.cs",
+              "RelativeDocumentMoniker": "Hacker.Services\\IStoriesService.cs",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Services\\IStoriesService.cs",
+              "RelativeToolTip": "Hacker.Services\\IStoriesService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBAAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T13:06:42.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HackerNewsController.cs",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.API\\Controllers\\HackerNewsController.cs",
+              "RelativeDocumentMoniker": "Hacker.API\\Controllers\\HackerNewsController.cs",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.API\\Controllers\\HackerNewsController.cs",
+              "RelativeToolTip": "Hacker.API\\Controllers\\HackerNewsController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAnwCMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T10:11:33.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.API\\Program.cs",
+              "RelativeDocumentMoniker": "Hacker.API\\Program.cs",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.API\\Program.cs",
+              "RelativeToolTip": "Hacker.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T10:38:36.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Hacker.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Hacker.API\\Properties\\launchSettings.json",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-12T10:42:28.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Hacker.API.csproj",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.API\\Hacker.API.csproj",
+              "RelativeDocumentMoniker": "Hacker.API\\Hacker.API.csproj",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.API\\Hacker.API.csproj",
+              "RelativeToolTip": "Hacker.API\\Hacker.API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-12T10:18:19.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Hacker.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.API\\appsettings.json",
+              "RelativeToolTip": "Hacker.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-12T10:42:38.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Hacker.API.http",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.API\\Hacker.API.http",
+              "RelativeDocumentMoniker": "Hacker.API\\Hacker.API.http",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.API\\Hacker.API.http",
+              "RelativeToolTip": "Hacker.API\\Hacker.API.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-04-12T10:42:41.804Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "d6c5d32f-9076-418c-b234-28c57794ed8f",
+        "Display": 0,
+        "X": -231,
+        "Y": 125,
+        "Width": 1734,
+        "Height": 841,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StoriesService.cs",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Services\\StoriesService.cs",
+              "RelativeDocumentMoniker": "Hacker.Services\\StoriesService.cs",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Services\\StoriesService.cs",
+              "RelativeToolTip": "Hacker.Services\\StoriesService.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAgwEAAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T13:05:35.733Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "b94b39c3-3750-4b70-82b1-acd08b408f74",
+        "Display": 0,
+        "X": 89,
+        "Y": 186,
+        "Width": 1294,
+        "Height": 841,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Story.cs",
+              "DocumentMoniker": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Models\\Story.cs",
+              "RelativeDocumentMoniker": "Hacker.Models\\Story.cs",
+              "ToolTip": "C:\\Users\\bzfs\\source\\repos\\Hacker.API\\Hacker.Models\\Story.cs",
+              "RelativeToolTip": "Hacker.Models\\Story.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T12:20:21.831Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
