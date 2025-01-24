@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SantanderTest.HackerAPI.Model\SantanderTest.HackerAPI.Model.csproj" />
+    <ProjectReference Include="..\SantanderTest.HackerAPI.Model\HackerAPI.Model.csproj" />
   </ItemGroup>
 
 </Project>
