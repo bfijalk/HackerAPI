@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SantanderTest.HackerAPI.Services\HackerAPI.Services.csproj" />
+    <ProjectReference Include="..\HackerAPI.Services\HackerAPI.Services.csproj" />
   </ItemGroup>
 
 </Project>
