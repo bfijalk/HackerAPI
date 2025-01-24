@@ -15,7 +15,7 @@ SantanderTest.HackerAPI is a .NET 8 web API that provides access to top stories 
 
 ```
 git clone https://github.com/yourusername/SantanderTest.HackerAPI.git
-cd SantanderTest.HackerAPI
+cd HackerAPI
 ```
    
 2. Restore the NuGet packages:
@@ -35,7 +35,7 @@ dotnet build
 1. Run the application:
 
 ```
-dotnet run --project SantanderTest.HackerAPI
+dotnet run --project HackerAPI
 ```
 
 2. The API will be available at `https://localhost:5001`.
@@ -62,10 +62,10 @@ Test data is provided by the `TestDataProvider` class located in the `SantanderT
 
 ## Project Structure
 
-- `SantanderTest.HackerAPI`: Main project containing the API implementation.
-- `SantanderTest.HackerAPI.Model`: Contains the data models.
-- `SantanderTest.HackerAPI.Services`: Contains the service classes and constants.
-- `SantanderTest.HackerAPI.Tests`: Contains the unit tests.
+- `HackerAPI`: Main project containing the API implementation.
+- `HackerAPI.Model`: Contains the data models.
+- `HackerAPI.Services`: Contains the service classes and constants.
+- `HackerAPI.Tests`: Contains the unit tests.
 
 ## Dependencies
 
