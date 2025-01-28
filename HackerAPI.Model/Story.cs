@@ -1,7 +1,7 @@
-﻿using SantanderTest.HackerAPI.Model.Helpers;
+﻿using HackerAPI.Model.Helpers;
 using System.Text.Json.Serialization;
 
-namespace SantanderTest.HackerAPI.Model
+namespace HackerAPI.Model
 {
     public class StoryDto
     {

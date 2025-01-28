@@ -1,9 +1,10 @@
-using SantanderTest.HackerAPI.Services;
+using HackerAPI.Services;
+using HackerAPI.Services.Constants;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.Configure<ResiliencySettings>(builder.Configuration.GetSection("Resiliency"));
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

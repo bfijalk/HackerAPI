@@ -76,6 +76,25 @@ Test data is provided by the `TestDataProvider` class located in the `SantanderT
 - NUnit
 - FluentAssertions
 
+## Resiliency Features
+### Retry Policy
+The retry policy is implemented using Polly to handle transient errors. It retries the request up to 3 times with an exponential backoff strategy.
+
+### Rate Limiting
+The rate limit policy is implemented using Polly to prevent API overload. It limits the requests to 250 requests per 3 seconds with a maximum burst of 200 requests at once.
+
+## Exception Handling
+The `HackerController` includes detailed exception handling to provide meaningful error messages and appropriate HTTP status codes.
+
+### Exception Types
+- **RateLimitRejectedException**: Thrown when the rate limit is exceeded. Returns a `429 Too Many Requests` status code.
+- **HttpRequestException**: Thrown for HTTP request errors. Returns a `503 Service Unavailable` status code.
+- **Exception**: Catches any other unexpected exceptions. Returns a `500 Internal Server Error` status code.
+
+## Logging
+The service logs important information such as the number of requests made, cache hits, and errors encountered. This helps in monitoring the rate limit usage and debugging issues.
+
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.

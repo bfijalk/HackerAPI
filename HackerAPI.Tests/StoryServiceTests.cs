@@ -1,14 +1,16 @@
 using Microsoft.Extensions.Caching.Memory;
 using Moq;
-using SantanderTest.HackerAPI.Model;
-using SantanderTest.HackerAPI.Services;
-using SantanderTest.HackerAPI.Services.Constants;
-using Microsoft.Extensions.Logging; 
+using HackerAPI.Model;
+using HackerAPI.Services;
+using HackerAPI.Services.Constants;
+using Microsoft.Extensions.Logging;
 using Moq.Protected;
 using System.Text.Json;
 using FluentAssertions;
+using Polly.RateLimit;
+using Microsoft.Extensions.Configuration;
 
-namespace SantanderTest.HackerAPI.Tests
+namespace HackerAPI.Tests
 {
     [TestFixture]
     public class StoriesServiceTests
@@ -18,17 +20,26 @@ namespace SantanderTest.HackerAPI.Tests
         private Mock<HttpMessageHandler> _mockHttpMessageHandler;
         private HttpClient _httpClient;
         private StoryService _storyService;
+        private ApiSettings _apiSettings;
 
         [SetUp]
         public void SetUp()
         {
+            var configuration = new ConfigurationBuilder()
+              .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+              .Build();
+
+            var resiliencySettings = configuration.GetSection("Resiliency").Get<ResiliencySettings>();
+            _apiSettings = configuration.GetSection("ApiSettings").Get<ApiSettings>();
+
             _mockCache = new Mock<IMemoryCache>();
             _mockLogger = new Mock<ILogger<StoryService>>();
             _mockHttpMessageHandler = new Mock<HttpMessageHandler>();
             _httpClient = new HttpClient(_mockHttpMessageHandler.Object)
             {
-                BaseAddress = new Uri(ApiUris.BASE_URI)
+                BaseAddress = new Uri(_apiSettings.BaseUrl)
             };
+
             _storyService = new StoryService(_mockCache.Object, _mockLogger.Object, _httpClient);
             HttpGetIdsResponseMock();
         }
@@ -79,8 +90,6 @@ namespace SantanderTest.HackerAPI.Tests
             result.Should().BeEquivalentTo(expectedStory);
         }
 
-
-
         [Test]
         [TestCase(1)]
         [TestCase(2)]
@@ -122,7 +131,7 @@ namespace SantanderTest.HackerAPI.Tests
                 .OrderByDescending(x => x.Score)
                 .Take(count)
                 .ToList();
- 
+
             MockSingleStoryInCache(0);
             MockSingleStoryInCache(1);
             MockSingleStoryInCache(2);
@@ -137,6 +146,90 @@ namespace SantanderTest.HackerAPI.Tests
             result.Should().BeEquivalentTo(expectedList, options => options
                 .ComparingByMembers<Story>()
                 .WithStrictOrdering());
+        }
+
+        [Test]
+        public async Task GetStoriesIds_ShouldRetryOnFailure()
+        {
+            // Arrange
+            var retryCount = 0;
+            _mockHttpMessageHandler
+                .Protected()
+                .Setup<Task<HttpResponseMessage>>(
+                    "SendAsync",
+                    ItExpr.Is<HttpRequestMessage>(request => request.RequestUri == new Uri(_apiSettings.BaseUrl + _apiSettings.BestStories)),
+                    ItExpr.IsAny<CancellationToken>())
+                .ReturnsAsync(() =>
+                {
+                    retryCount++;
+                    if (retryCount < 3)
+                    {
+                        return new HttpResponseMessage(System.Net.HttpStatusCode.InternalServerError);
+                    }
+                    return new HttpResponseMessage(System.Net.HttpStatusCode.OK)
+                    {
+                        Content = new StringContent(JsonSerializer.Serialize(TestDataProvider.GetIds()))
+                    };
+                });
+
+            // Act
+            var result = await _storyService.GetStoriesIds();
+
+            // Assert
+            CollectionAssert.AreEqual(result, TestDataProvider.GetIds());
+            Assert.That(retryCount, Is.EqualTo(3));
+        }
+
+        [Test]
+        public async Task GetStoryDetailsById_ShouldRespectRateLimit()
+        {
+            // Arrange
+            var storyId = 1;
+            var expectedStory = GrabObjectDetailsByIdMock(storyId).MapToObject();
+            _mockCache.Setup(m => m.CreateEntry(It.IsAny<object>())).Returns(Mock.Of<ICacheEntry>());
+
+            // Act
+            var result1 = await _storyService.GetStoryDetailsById(storyId);
+            var result2 = await _storyService.GetStoryDetailsById(storyId);
+
+            // Assert
+            result1.Should().BeEquivalentTo(expectedStory);
+            result2.Should().BeEquivalentTo(expectedStory);
+        }
+
+        [Test]
+        public async Task GetStoryDetailsById_ShouldThrowRateLimitRejectedExceptionWhenExceedsLimit()
+        {
+            // Arrange
+            var storyId = 1;
+            var expectedStory = GrabObjectDetailsByIdMock(storyId).MapToObject();
+            _mockCache.Setup(m => m.CreateEntry(It.IsAny<object>())).Returns(Mock.Of<ICacheEntry>());
+
+            var requestCount = 0;
+            _mockHttpMessageHandler
+                .Protected()
+                .Setup<Task<HttpResponseMessage>>(
+                    "SendAsync",
+                    ItExpr.IsAny<HttpRequestMessage>(),
+                    ItExpr.IsAny<CancellationToken>())
+                .ReturnsAsync(() =>
+                {
+                    requestCount++;
+                    return new HttpResponseMessage(System.Net.HttpStatusCode.OK)
+                    {
+                        Content = new StringContent(JsonSerializer.Serialize(expectedStory))
+                    };
+                });
+
+            // Act
+            var tasks = new List<Task<Story>>();
+            for (int i = 0; i < 300; i++)
+            {
+                tasks.Add(_storyService.GetStoryDetailsById(storyId));
+            }
+
+            Assert.ThrowsAsync<RateLimitRejectedException>(async () => { await Task.WhenAll(tasks); });
+            Assert.That(requestCount, Is.LessThanOrEqualTo(250));
         }
 
         private void MockSingleStoryInCache(int id)
@@ -159,7 +252,7 @@ namespace SantanderTest.HackerAPI.Tests
               .Protected()
               .Setup<Task<HttpResponseMessage>>(
                 "SendAsync",
-                ItExpr.Is<HttpRequestMessage>(request => request.RequestUri == new Uri(ApiUris.BASE_URI + ApiUris.BEST_STORIES)),
+                ItExpr.Is<HttpRequestMessage>(request => request.RequestUri == new Uri(_apiSettings.BaseUrl + _apiSettings.BestStories)),
                 ItExpr.IsAny<CancellationToken>())
               .ReturnsAsync(response);
         }
@@ -169,7 +262,7 @@ namespace SantanderTest.HackerAPI.Tests
         {
             var expectedObject = TestDataProvider.GetEntries().ToList();
             var stories = JsonSerializer.Serialize(expectedObject[id]);
-            var url = ApiUris.BASE_URI + String.Format(ApiUris.ITEM, id);
+            var url = _apiSettings.BaseUrl + String.Format(_apiSettings.Item, id);
 
             var response = new HttpResponseMessage()
             {

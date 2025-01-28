@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SantanderTest.HackerAPI.Services;
+using HackerAPI.Services;
 using System.ComponentModel.DataAnnotations;
+using Polly.RateLimit;
 
-namespace SantanderTest.HackerAPI.Controllers
+namespace HackerAPI.Controllers
 {
     [ApiController]
     [Route("HackerAPI")]
@@ -18,7 +19,7 @@ namespace SantanderTest.HackerAPI.Controllers
         }
 
         [HttpGet(Name = "GetStories")]
-        public async Task<IActionResult> GetTopStories([Range(0,500)] int count)
+        public async Task<IActionResult> GetTopStories([Range(0, 200)] int count)
         {
             if (!ModelState.IsValid)
             {
@@ -32,11 +33,22 @@ namespace SantanderTest.HackerAPI.Controllers
                 _logger.LogInformation($"Successfully fetched top {result.Count()} stories from API");
                 return Ok(result);
             }
+            catch (RateLimitRejectedException ex)
+            {
+                _logger.LogError($"Rate limit exceeded while fetching top {count} stories: {ex.Message}");
+                return StatusCode(429, "Rate limit exceeded. Please try again later.");
+            }
+            catch (HttpRequestException ex)
+            {
+                _logger.LogError($"HTTP request error while fetching top {count} stories: {ex.Message}");
+                return StatusCode(503, "Service unavailable. Please try again later.");
+            }
             catch (Exception ex)
             {
-                _logger.LogError($"Error fetching top {count} stories from API: {ex.Message}");
-                return StatusCode(500);
+                _logger.LogError($"Unexpected error fetching top {count} stories: {ex.Message}");
+                return StatusCode(500, "An unexpected error occurred. Please try again later.");
             }
+
         }
     }
 }

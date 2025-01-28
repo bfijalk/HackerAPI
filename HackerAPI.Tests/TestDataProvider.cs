@@ -1,11 +1,6 @@
-﻿using SantanderTest.HackerAPI.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HackerAPI.Model;
 
-namespace SantanderTest.HackerAPI.Tests
+namespace HackerAPI.Tests
 {
     public class TestDataProvider
     {
