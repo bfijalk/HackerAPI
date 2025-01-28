@@ -1,6 +1,6 @@
-# SantanderTest.HackerAPI
+# HackerAPI
 
-SantanderTest.HackerAPI is a .NET 8 web API that provides access to top stories from a hacker news-like service. The API uses caching to improve performance and reduce the number of requests to the external service.
+HackerAPI is a .NET 8 web API that provides access to top stories from a hacker news-like service. The API uses caching to improve performance and reduce the number of requests to the external service.
 
 ## Features
 
@@ -14,7 +14,7 @@ SantanderTest.HackerAPI is a .NET 8 web API that provides access to top stories 
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/SantanderTest.HackerAPI.git
+git clone https://github.com/yourusername/HackerAPI.git
 cd HackerAPI
 ```
    
@@ -58,7 +58,7 @@ dotnet test
 
 ### Test Data
 
-Test data is provided by the `TestDataProvider` class located in the `SantanderTest.HackerAPI.Tests` namespace.
+Test data is provided by the `TestDataProvider` class located in the `HackerAPI.Tests` namespace.
 
 ## Project Structure
 
